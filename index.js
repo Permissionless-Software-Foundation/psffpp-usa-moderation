@@ -1,24 +1,16 @@
 /*
-  An npm JavaScript library for front end web apps. Implements a minimal
-  Bitcoin Cash wallet.
+  An array of CIDs to moderate.
 */
 
 /* eslint-disable no-async-promise-executor */
 
-import BCHJS from '@psf/bch-js'
-
-import Util from './lib/util.js'
-const util = new Util()
-
-let _this // local global for 'this'.
-
-class BoilerplateLib {
-  constructor () {
-    _this = this
-
-    _this.bchjs = new BCHJS()
-    _this.util = util
+const files = [
+  {
+    cid: 'bafkreibsgoiunnmli3sm7uec5vyqor4uf6savfzmmbokhgc5q7kcbnhkgq',
+    filename: 'zebra2.jpg',
+    reason: 'Test file',
+    source: 'PSF'
   }
-}
+]
 
-export default BoilerplateLib
+export default files
