@@ -1,38 +1,25 @@
 {
-  "name": "@chris.troutner/npm-lib-boilerplate-esm",
+  "name": "psffpp-usa-moderation",
   "version": "1.0.0",
-  "description": "A boilerplate for creating an npm library with Semantic Release, linting, and tests.",
+  "description": "An array of moderated files in the USA",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "test": "npm run lint && TEST=unit c8 mocha test/unit/",
+    "test": "echo 'no tests'",
     "test:integration": "mocha --timeout 25000 test/integration/",
     "lint": "standard --env mocha --fix",
     "docs": "./node_modules/.bin/apidoc -i src/ -o docs",
     "coverage": "c8 report --reporter=text-lcov | coveralls",
     "coverage:report": "c8 --reporter=html mocha test/unit/ --exit"
   },
-  "keywords": [
-    "bitcoin",
-    "bitcoin cash",
-    "wallet",
-    "javascript",
-    "cryptocurrency",
-    "react",
-    "front end",
-    "client",
-    "apidoc",
-    "slp",
-    "tokens"
-  ],
   "author": "Chris Troutner <chris.troutner@gmail.com>",
   "license": "MIT",
   "apidoc": {
-    "title": "npm-lib-boilerplate-esm",
+    "title": "psffpp-usa-moderation",
     "url": "localhost:5000"
   },
-  "repository": "christroutner/npm-lib-boilerplate-esm",
+  "repository": "Permissionless-Software-Foundation/psffpp-usa-moderation",
   "dependencies": {
     "@psf/bch-js": "6.4.5",
     "apidoc": "0.53.0"
